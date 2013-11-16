@@ -8,12 +8,38 @@
     <link rel="stylesheet" href="style.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Lato|Courgette' rel='stylesheet' type='text/css'>
 <script>
-	function changeLink() {
-		document.getElementById('myAnchor').innerHTML = "Civilization V";
-		document.getelementById('myAnchor').href = "http://www.google.com";
-		document.getElementById('myAnchor').target = "_blank";
+
+	function buttonPress() {
+		var x;
+		var r = confirm("Load Game!");
+		if (r==true) {
+			x="You pressed OK!";
+  		} else {
+  			x="You pressed Cancel!";
+ 		}
+		document.getElementById("demo").innerHTML=x;
 	}
+<<<<<<< HEAD
 </script>
+=======
+	
+	function enlarge(img) {
+		var width = img.clientWidth;
+		var height = img.clientHeight;
+		img.style.width = 2 * width + "px";
+		img.style.height = 2 * height + "px";
+	}
+	
+	function reduce(img) {	
+		var width = img.clientWidth;
+		var height = img.clientHeight;
+		img.style.width = width / 2 + "px";
+		img.style.height = height / 2 + "px";
+	}	
+		
+</script>
+
+>>>>>>> 4f111fa412ba6c3fc952c4bd8dc1806b1c8bbd24
 </head>
 <body>
 <div id="headerBackground">
@@ -42,6 +68,10 @@
 					<a id="myAnchor" href="http://www.google.com"> Sora Demo </a>
 					<input type="button" onclick="changeLink()" value="Change link">
 				</p>
+				<p>
+				<a id="myAnchor" href="http://www.google.com"> Launch Demo </a>
+				</p>
+				<img onmouseover="enlarge(this)" onmouseout="reduce(this)" src="Logo.gif" alt="Civilization V" width="16" height="16">
 			</div>
 		</div>
 	</div>
