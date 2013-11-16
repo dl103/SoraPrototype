@@ -4,15 +4,18 @@
     <meta charset="utf-8">
     <title>Sora</title>
     <link rel="stylesheet" href="style.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Lato|Courgette' rel='stylesheet' type='text/css'>
 <script>
+	
 	function changeLink() {
 		document.getElementById('myAnchor').innerHTML = "Civilization V";
 		document.getelementById('myAnchor').href = "http://www.google.com";
 		document.getElementById('myAnchor').target = "_blank";
 	}
+	
 	function buttonPress() {
 		var x;
-		var r = confirm("Load Game!")
+		var r = confirm("Load Game!");
 		if (r==true) {
 			x="You pressed OK!";
   		} else {
@@ -20,9 +23,22 @@
  		}
 		document.getElementById("demo").innerHTML=x;
 	}
-	function writeText(txt) {
-		document.getElementByID("desc").innerHTML = txt;
-	}			
+	
+	function enlarge(x) {
+		var img = document.getElementById(x);
+		var width = img.clientWidth;
+		var height = img.clientHeight;
+		width = width * 2;
+		height = height * 2;
+	}
+	
+	function reduce(x) {
+		var img = document.getElementById(x);
+		var width = img.clientWidth;
+		var height = img.clientHeight;
+		width = width / 2;
+		height = height / 2;
+	}		
 </script>
 </head>
 <body>
@@ -36,6 +52,11 @@
 <div id="contentWrapper">
 	<div id="sidebar">
 		<div id="gameListBox">
+			<div id="gameListText">
+				<p>Assassin's Creed IV: Black Flag</p>
+				<p>Civilization V</p>
+				<p>DotA 2</p>
+			</div>
 		</div>
 	</div>
 	<div id="gameContent">
@@ -43,24 +64,8 @@
 			<p>
 				<a id="myAnchor" href="http://www.google.com"> Sora Demo </a>
 				<input type="button" onclick="changeLink()" value="Change link">
+				<img onmouseover="enlarge(this)" onmouseout="reduce(this)" src="Logo.gif" alt="Civilization V" width="32" height="32">
 			</p>
-			<img src ="Logo.gif" width ="145" height ="126" alt="Planets" usemap="#planetmap" />
-
-			<map name="planetmap">
-			<area shape ="rect" coords ="0,0,82,126"
-			onmouseover="writeText('The Sun and the gas giant planets like Jupiter are by far the largest objects in our Solar System.')"
-			href ="sun.htm" target ="_blank" alt="Sun" />
-			
-			<area shape ="circle" coords ="90,58,3"
-			onmouseover="writeText('The planet Mercury is very difficult to study from the Earth because it is always so close to the Sun.')"
-			href ="mercur.htm" target ="_blank" alt="Mercury" />
-			
-			<area shape ="circle" coords ="124,58,8"
-			onmouseover="writeText('Until the 1960s, Venus was often considered a twin sister to the Earth because Venus is the nearest planet to us, and because the two planets seem to share many characteristics.')"
-			href ="venus.htm" target ="_blank" alt="Venus" />
-			</map> 
-			
-			<p id="desc">Mouse over the sun and the planets and see the different descriptions.</p>	
 		</div>
 	</div>
 </div>
