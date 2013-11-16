@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Sora",
+  "version": "1",
+  "app": {
+    "background": {
+      "scripts": ["main.js"]
+    }
+  },
+  "permissions": [] ,
+  "icons": { "128": "icon.png" }
+}
