@@ -4,6 +4,13 @@
     <meta charset="utf-8">
     <title>Sora</title>
     <link rel="stylesheet" href="style.css" media="screen">
+<script>
+	function changeLink() {
+		document.getElementById('myAnchor').innerHTML = "Civilization V";
+		document.getelementById('myAnchor').href = "http://www.google.com";
+		document.getElementById('myAnchor').target = "_blank";
+	}		
+</script>
 </head>
 <body>
 <div id="headerBackground">
@@ -23,5 +30,9 @@
 		</div>
 	</div>
 </div>
+<p>
+	<a id="myAnchor" href="http://www.google.com"> Sora Demo </a>
+	<input type="button" onclick="changeLink()" value="Change link">
+</p>
 </body>
 </html>
