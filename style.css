@@ -8,9 +8,11 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 /* Typography */
-body { font-family: 'Lato', Helvetica; font-weight: 400; }
+body { font-family: 'Lato', Helvetica; }
 
 h1 { font-family: Helvetica; }
+
+strong { font-size: 20px; font-weight: bold; }
 
 #headerText h1 {
 	font-size: 44px;
@@ -21,12 +23,12 @@ h1 { font-family: Helvetica; }
 }
 
 #gameListText p {
-	font-size: 12px;
+	font-size: 14px;
 	color: #f7eee7;
 }
 
 #gameInfoText p {
-	font-size: 12px;
+	font-size: 14px;
 	color: #f7eee7;
 }
 
@@ -85,10 +87,12 @@ h1 { font-family: Helvetica; }
 #gameListText {
 	position: relative;
 	width: 95%;
+	height: inherit;
 	padding-top: 20px;
 	line-height: 150%;
 	margin-left: auto;
     margin-right: auto;
+    overflow: scroll;
 }
 
 #gameTitle:hover{
@@ -99,15 +103,17 @@ h1 { font-family: Helvetica; }
 #gameInfoText {
 	position: relative;
 	width: 95%;
+	height: inherit;
 	padding-top: 20px;
 	margin-left: auto;
     margin-right: auto;
+    overflow: scroll;
 }
 
 #gameInfoBox {
 	height: 90%;
 	width: 95%;
-	position: absolute;
+	position: relative;
 	top: 10px;
 	left: 10px;
 	-moz-border-radius-bottomright: 25px;
