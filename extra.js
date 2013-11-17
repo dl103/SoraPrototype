@@ -3,22 +3,25 @@ function changeInfo(intId) {
 		document.getElementById("gameInfoHeaderText").innerHTML="Assassin's Creed IV: Black Flag";
 		document.getElementById("gameInfoSlide").innerHTML="The year is 1715. Pirates rule the Caribbean and have established their own lawless Republic where corruption, greediness and cruelty are commonplace. Among these outlaws is a brash young captain named Edward Kenway.";
 		document.getElementById("gameVideoSlide").src="http://www.youtube.com/embed/IDlEwUP7lps?autoplay=1";
-		document.getElementById("gameScreenshotSlide").src = chrome.extension.getURL("civ5.jpg");
+		document.getElementById("map").src="civ5.jpg";
 	};
 	if(intId == 2) {
 		document.getElementById("gameInfoHeaderText").innerHTML="Civilization V";
 		document.getElementById("gameInfoSlide").innerHTML="The Flagship Turn-Based Strategy Game Returns Become Ruler of the World by establishing and leading a civilization from the dawn of man into the space age: Wage war, conduct diplomacy, discover new technologies, go head-to-head with some of history’s greatest leaders and build the most powerful empire the world has ever known.";
 		document.getElementById("gameVideoSlide").src="http://www.youtube.com/embed/l-y99pkS_Vs?autoplay=1";
+		document.getElementById("map").src="civ5.jpg";
 	};
 	if(intId == 3) {
 		document.getElementById("gameInfoHeaderText").innerHTML="DotA 2";
 		document.getElementById("gameInfoSlide").innerHTML="Dota is a competitive game of action and strategy,played both professionally and casually by millions of passionate fans worldwide. Players pick from a pool of over a hundred heroes, forming two teams of five players.";
 		document.getElementById("gameVideoSlide").src="http://www.youtube.com/embed/-cSFPIwMEq4?autoplay=1";
+		document.getElementById("map").src="dota2.jpg";
 	};
 	if(intId == 4) {
 		document.getElementById("gameInfoHeaderText").innerHTML="Street Fighter IV";
 		document.getElementById("gameInfoSlide").innerHTML="Super Street Fighter® IV Arcade Edition, brings the definitive vision of Street Fighter® to the PC. The follow-up to the critically acclaimed Super Street Fighter® IV will further redefine the fighting game genre with classic 2D Street Fighter fighting action, a host of new and returning characters, beefed up online modes, and more.";
 		document.getElementById("gameVideoSlide").src="http://www.youtube.com/embed/2uOt-XmNrQw?autoplay=1";
+		document.getElementById("map").src="civ5.jpg";
 	};
 }
 
