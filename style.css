@@ -14,14 +14,6 @@ h1 { font-family: Helvetica; }
 
 strong { font-weight: bold; }
 
-#headerText h1 {
-	font-size: 44px;
-	color: #6cbef2;
-	position: relative;
-	padding-top: 40px;
-	padding-left: 40px;
-}
-
 #gameListText p {
 	font-size: 14px;
 	color: #f7eee7;
@@ -65,6 +57,15 @@ strong { font-weight: bold; }
 	padding-top: 75px;
 	background-image: url(SoraSeparator.png);
 	background-size: 970px 22px
+}
+
+#headerLogo {
+	width: 280px;
+	height: 80px;
+	position: relative;
+	top: 10px;
+	background-image: url(SoraLogo2.png);
+	background-size:  280px 80px;
 }
 
 #headerBackground {
@@ -236,6 +237,11 @@ strong { font-weight: bold; }
 
 #accordion {
 	padding-top: 20px;
+}
+
+#gameVideoSlide {
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 
