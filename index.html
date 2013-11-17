@@ -3,38 +3,10 @@
 <head>
     <meta charset="utf-8">
     <title>Sora</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-	</script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="extra.js"></script>
     <link rel="stylesheet" href="style.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Lato|Courgette' rel='stylesheet' type='text/css'>
-<script>
-
-	function buttonPress() {
-		var x;
-		var r = confirm("Load Game!");
-		if (r==true) {
-			x="You pressed OK!";
-  		} else {
-  			x="You pressed Cancel!";
- 		}
-		document.getElementById("demo").innerHTML=x;
-	}
-
-	function enlarge(img) {
-		var width = img.clientWidth;
-		var height = img.clientHeight;
-		img.style.width = 2 * width + "px";
-		img.style.height = 2 * height + "px";
-	}
-	
-	function reduce(img) {	
-		var width = img.clientWidth;
-		var height = img.clientHeight;
-		img.style.width = width / 2 + "px";
-		img.style.height = height / 2 + "px";
-	}	
-		
-</script>
 </head>
 <body>
 <div id="headerBackground">
@@ -48,14 +20,23 @@
 	<div id="sidebar">
 		<div id="gameListBox">
 			<div id="gameListText">
-				<p id="gameTitle">Assassin's Creed IV: Black Flag</p>
-				<p id="gameTitle">Civilization V</p>
-				<p id="gameTitle">DotA 2</p>
+				<p>Game List</p>
+				<div id="gameListBorder">
+				</div>
+				<p id="assassinsCreed">Assassin's Creed IV</p>
+				<p id="civilizationV">Civilization V</p>
+				<p id="dota2">DotA 2</p>
+				<p id="streetFighter4">Street Fighter IV</p>
 			</div>
 		</div>
 	</div>
 	<div id="gameContent">
 		<div id="gameInfoBox">
+			<div id="gameInfoHeader">
+				<p><strong>
+				<p id="gameInfoHeaderText">Testing</p>
+				</strong>
+			</div>
 			<div id="gameInfoText">
 				<p>
 					<strong>Game Info</strong><br>
@@ -66,7 +47,7 @@
 				<p>
 				<a id="myAnchor" href="http://www.google.com"> Launch Demo </a>
 				</p>
-				<img onmouseover="enlarge(this)" onmouseout="reduce(this)" src="Logo.gif" alt="Civilization V" width="16" height="16">
+				<img id="civ5pic" onmouseover="enlarge(this)" onmouseout="reduce(this)" src="Logo.gif" alt="Civilization V" width="16" height="16">
 			</div>
 		</div>
 	</div>
