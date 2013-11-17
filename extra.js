@@ -38,6 +38,20 @@ function reduce(img) {
 	img.style.height = height / 2 + "px";
 }
 
+function launchDemo() {
+	chrome.app.window.create("client.html",
+    {  frame: "none",
+       id: "framelessWinID",
+       bounds: {
+         width: 1,
+         height: 1
+       }
+    }, function(win) {
+    	win.fullscreen();
+    }
+  );
+}
+
 document.addEventListener('DOMContentLoaded', function () {
 	document.getElementById('assassinsCreed').addEventListener('click', function() {
 		changeInfo(1);
@@ -51,4 +65,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.getElementById('streetFighter4').addEventListener('click', function() {
 		changeInfo(4);
 	});
+	document.getElementById('launchButton').addEventListener('click', function() {
+		launchDemo();
+	});
+	changeInfo(1);
 });
