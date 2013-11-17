@@ -50,6 +50,10 @@ strong { font-weight: bold; }
     margin-right: auto;
 }
 
+#accordion p {
+	color: black;
+}
+
 /* Page Sections */
 
 #headerBorder {
