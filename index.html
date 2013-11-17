@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>Sora</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-	</script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="extra.js"></script>
     <link rel="stylesheet" href="style.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Lato|Courgette' rel='stylesheet' type='text/css'>
 <!-- <script>
@@ -25,11 +25,11 @@
 	function showCoordinates(e) {
 		x = e.clientX;
 		y = e.clientY;
-		coor = "Coordinates: (" + x + "," + y + ")"
-		document.getElementById("desc").innerHTML=coor
+		coor = "Coordinates: (" + x + "," + y + ")";
+		document.getElementById("desc").innerHTML=coor;
 	}
 	function clearCoor() {
-		document.getElementById("desc").innerHTML=""
+		document.getElementById("desc").innerHTML="";
 	}
 </script>
 </head>
@@ -45,14 +45,23 @@
 	<div id="sidebar">
 		<div id="gameListBox">
 			<div id="gameListText">
-				<p id="gameTitle">Assassin's Creed IV: Black Flag</p>
-				<p id="gameTitle">Civilization V</p>
-				<p id="gameTitle">DotA 2</p>
+				<p>Game List</p>
+				<div id="gameListBorder">
+				</div>
+				<p id="assassinsCreed">Assassin's Creed IV</p>
+				<p id="civilizationV">Civilization V</p>
+				<p id="dota2">DotA 2</p>
+				<p id="streetFighter4">Street Fighter IV</p>
 			</div>
 		</div>
 	</div>
 	<div id="gameContent">
 		<div id="gameInfoBox">
+			<div id="gameInfoHeader">
+				<p><strong>
+				<p id="gameInfoHeaderText">Testing</p>
+				</strong>
+			</div>
 			<div id="gameInfoText">
 				<p>
 					<strong>Game Info</strong><br>

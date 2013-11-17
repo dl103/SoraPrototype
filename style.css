@@ -12,7 +12,7 @@ body { font-family: 'Lato', Helvetica; }
 
 h1 { font-family: Helvetica; }
 
-strong { font-size: 20px; font-weight: bold; }
+strong { font-weight: bold; }
 
 #headerText h1 {
 	font-size: 44px;
@@ -29,6 +29,11 @@ strong { font-size: 20px; font-weight: bold; }
 
 #gameInfoText p {
 	font-size: 14px;
+	color: #f7eee7;
+}
+
+#gameInfoHeader p {
+	font-size: 30px;
 	color: #f7eee7;
 }
 
@@ -84,6 +89,15 @@ strong { font-size: 20px; font-weight: bold; }
 	-webkit-box-shadow: 3px 3px 5px 6px #060b10;
 }
 
+#gameListBorder {
+	width: 170px;
+	margin-left: auto;
+    margin-right: auto;
+	height: 2px;
+	position: relative;
+	background: #f7eee7;
+}
+
 #gameListText {
 	position: relative;
 	width: 95%;
@@ -95,7 +109,22 @@ strong { font-size: 20px; font-weight: bold; }
     overflow: scroll;
 }
 
-#gameTitle:hover{
+#assassinsCreed:hover{
+	color: black;
+	-webkit-transition:color .2s ease-out, background .2s ease-in;
+}
+
+#civilizationV:hover{
+	color: black;
+	-webkit-transition:color .2s ease-out, background .2s ease-in;
+}
+
+#dota2:hover{
+	color: black;
+	-webkit-transition:color .2s ease-out, background .2s ease-in;
+}
+
+#streetFighter4:hover{
 	color: black;
 	-webkit-transition:color .2s ease-out, background .2s ease-in;
 }
@@ -120,11 +149,20 @@ strong { font-size: 20px; font-weight: bold; }
 	position: relative;
 	width: 95%;
 	height: inherit;
-	padding-top: 20px;
+	padding-top: 0px;
 	margin-left: auto;
     margin-right: auto;
     overflow-y: scroll;
     overflow-x: hidden;
+}
+
+#gameInfoHeader {
+	position: relative;
+	width: 95%;
+	height: 40px;
+	padding-top: 20px;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 #gameInfoBox {
