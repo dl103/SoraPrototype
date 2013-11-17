@@ -46,6 +46,29 @@ function reduce(img) {
 	img.style.height = height / 2 + "px";
 }
 
+function showCoordinates(e, img) {
+	x = e.clientX - 420;
+	y = e.clientY - 220;
+	coor = "Coordinates: (" + x + "," + y + ")";
+	document.getElementById("desc").innerHTML=coor;
+}
+function clearCoor() {
+	document.getElementById("desc").innerHTML="";
+}
+function writeText(txt) {
+	document.getElementById("annotation").innerHTML=txt;
+}
+// function offsetX(img) { 
+	// var x = img.offsetLeft;
+	// alert("left: " + x + " top: " + y);
+	// return x;
+// }
+// function offsetY(img) { 
+	// var y = img.offsetTop;
+	// alert("left: " + x + " top: " + y); 
+	// return y;
+// }
+
 function launchDemo() {
 	chrome.app.window.create("client.html",
     {  frame: "none",
