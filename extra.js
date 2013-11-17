@@ -51,8 +51,8 @@ function reduce(img) {
 }
 
 function showCoordinates(e, img) {
-	x = e.clientX - 420;
-	y = e.clientY - 220;
+	x = e.clientX - 339;
+	y = e.clientY - 235;
 	coor = "Coordinates: (" + x + "," + y + ")";
 	document.getElementById("desc").innerHTML=coor;
 }
@@ -100,6 +100,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 	document.getElementById('launchButton').addEventListener('click', function() {
 		launchDemo();
+	});
+	document.getElementById('map').addEventListener('mousemove', function() {
+		showCoordinates(event, document.getElementById('map'));
+	});
+	document.getElementById('map').addEventListener('mouseout', function() {
+		clearCoor();
 	});
 	document.getElementById('mapArea1').addEventListener('mouseover', function() {
 		writeText('duke it out');
