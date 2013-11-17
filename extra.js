@@ -101,5 +101,23 @@ document.addEventListener('DOMContentLoaded', function () {
 	document.getElementById('launchButton').addEventListener('click', function() {
 		launchDemo();
 	});
+	document.getElementById('mapArea1').addEventListener('mouseover', function() {
+		writeText('duke it out');
+	});
+	document.getElementById('mapArea1').addEventListener('mouseout', function() {
+		writeText('');
+	});
+	document.getElementById('mapArea2').addEventListener('mouseover', function() {
+		writeText('cashin out');
+	});
+	document.getElementById('mapArea2').addEventListener('mouseout', function() {
+		writeText('');
+	});
+	document.getElementById('mapArea3').addEventListener('mouseover', function() {
+		writeText('look at dem cattles');
+	});
+	document.getElementById('mapArea3').addEventListener('mouseout', function() {
+		writeText('');
+	});
 	changeInfo(1);
 });

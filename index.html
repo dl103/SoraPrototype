@@ -63,17 +63,11 @@
 						<div id="gameMap">
 						<img id = "map" src = "" onmousemove="showCoordinates(event, this)" onmouseout="clearCoor()" usemap="#gameplaymap" >
 						<map name = "gameplaymap">
-						<area shape ="circle" coords ="246,141,50"
-							onmouseover="writeText('duke it out')"
-							onmouseout="writeText('')"/>
+						<area id="mapArea1" shape ="circle" coords ="246,141,2000"></area>
 							
-							<area shape ="circle" coords ="375,214,50"
-							onmouseover="writeText('cashin out')"
-							onmouseout="writeText('')"/>
+						<area id="mapArea2" shape ="circle" coords ="375,214,50"></area>
 							
-							<area shape ="circle" coords ="482,216,40"
-							onmouseover="writeText('look at dem cattles')"
-							onmouseout="writeText('')"/>
+						<area id="mapArea3" shape ="circle" coords ="482,216,40"></area>
 						</map>
 						<p id="desc"> </p>
 						<p id="annotation"></p>	
