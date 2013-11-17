@@ -3,7 +3,7 @@ function changeInfo(intId) {
 		document.getElementById("gameInfoHeaderText").innerHTML="Assassin's Creed IV: Black Flag";
 		document.getElementById("gameInfoSlide").innerHTML="The year is 1715. Pirates rule the Caribbean and have established their own lawless Republic where corruption, greediness and cruelty are commonplace. Among these outlaws is a brash young captain named Edward Kenway.";
 		document.getElementById("gameVideoSlide").src="http://www.youtube.com/embed/IDlEwUP7lps?autoplay=1";
-		document.getElementById("map").src="civ5.jpg";
+		document.getElementById("map").src="ac4.jpg";
 	};
 	if(intId == 2) {
 		document.getElementById("gameInfoHeaderText").innerHTML="Civilization V";
@@ -21,7 +21,7 @@ function changeInfo(intId) {
 		document.getElementById("gameInfoHeaderText").innerHTML="Street Fighter IV";
 		document.getElementById("gameInfoSlide").innerHTML="Super Street Fighter® IV Arcade Edition, brings the definitive vision of Street Fighter® to the PC. The follow-up to the critically acclaimed Super Street Fighter® IV will further redefine the fighting game genre with classic 2D Street Fighter fighting action, a host of new and returning characters, beefed up online modes, and more.";
 		document.getElementById("gameVideoSlide").src="http://www.youtube.com/embed/2uOt-XmNrQw?autoplay=1";
-		document.getElementById("map").src="civ5.jpg";
+		document.getElementById("map").src="sf4.jpg";
 	};
 }
 
