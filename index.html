@@ -3,8 +3,12 @@
 <head>
     <meta charset="utf-8">
     <title>Sora</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
 	<script src="extra.js"></script>
+	<script src="accordian.js"></script>
+	<script src="jquery-1.9.1.js"></script>
+	<script src="jquery-ui.js"></script>
+	<link rel="stylesheet" href="jquery-ui.css">
     <link rel="stylesheet" href="style.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Lato|Courgette' rel='stylesheet' type='text/css'>
 <!-- <script>
@@ -76,14 +80,69 @@
 				</strong>
 			</div>
 			<div id="gameInfoText">
+				<div id="gameInfoHeader">
+					<div id="gameInfoHeaderTextBox">
+					<p><strong>
+					<p id="gameInfoHeaderText"></p>
+					</strong>
+					</p>
+					</div>
+					<div id="launchButton">
+						<p>Go!</p>
+					</div>
+				</div>
 				<p>
+				<div id="accordion">
+					  <h3>Section 1</h3>
+					  <div>
+					    <p>
+					    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+					    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+					    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+					    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+					    </p>
+					  </div>
+					  <h3>Section 2</h3>
+					  <div>
+					    <p>
+					    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+					    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+					    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+					    suscipit faucibus urna.
+					    </p>
+					  </div>
+					  <h3>Section 3</h3>
+					  <div>
+					    <p>
+					    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+					    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+					    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+					    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+					    </p>
+					    <ul>
+					      <li>List item one</li>
+					      <li>List item two</li>
+					      <li>List item three</li>
+					    </ul>
+					  </div>
+					  <h3>Section 4</h3>
+					  <div>
+					    <p>
+					    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+					    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+					    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+					    mauris vel est.
+					    </p>
+					    <p>
+					    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+					    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+					    inceptos himenaeos.
+					    </p>
+					  </div>
+					</div>
 					<strong>Game Info</strong><br>
-					Civilization V is a turn-based strategy game, where each player represents the leader of a certain nation or ethnic group ("civilization") and must guide its growth over the course of thousands of years. It starts with the founding of a small primitive settlement and ends after achieving one of the victory conditions—or surviving until the number of game turns end, at which point the highest-scoring civilization, based on several factors, is declared the winner. During their turn, the player must manage units representing civilian and military forces: directing units to explore the world, found new cities, go into battle to take over other civilizations, control production in their cities to produce new units and buildings, improve land, handle diplomacy with other civilizations in the game, and finally direct the civilization's growth in technology, culture, food supply, and economics. Victory conditions can include taking over the entire world by force, convincing the other civilizations through diplomacy to acknowledge the player as a leader, building the "Utopia Project" wonder by adopting social policies or winning the space race to build a colony spaceship to reach a nearby planet, or winning from being the most powerful civilization on the globe after a set number of turns.<br>
+					The Flagship Turn-Based Strategy Game Returns Become Ruler of the World by establishing and leading a civilization from the dawn of man into the space age: Wage war, conduct diplomacy, discover new technologies, go head-to-head with some of history’s greatest leaders and build the most powerful empire the world has ever known.<br>
 				</p>
-				<p>
-				<a id="myAnchor" href="http://www.google.com"> Launch Demo </a>
-				</p>
-				<!-- <img onmouseover="testImage(this)" onmouseout="reduce(this)" src="Logo.gif" alt="Civilization V" width="16" height="16"> -->
 				<div id="gameMap">
 					<img id = "map" src = "Screenshot I.jpg" onmousemove="showCoordinates(event, this)" onmouseout="clearCoor()" usemap="#gameplaymap" >
 					<map name = "gameplaymap">

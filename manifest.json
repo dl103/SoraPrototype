@@ -1,12 +1,11 @@
 {
   "manifest_version": 2,
   "name": "Sora",
-  "version": "1",
+  "version": "2",
+  "permissions": ["webview"],
   "app": {
     "background": {
-      "scripts": ["main.js"]
+      "scripts": ["main.js", "extra.js"]
     }
-  },
-  "permissions": [] ,
-  "icons": { "128": "icon.png" }
+  }
 }
