@@ -22,15 +22,28 @@
 	}	
 </script> -->
 <script>
-	function showCoordinates(e) {
-		x = e.clientX;
-		y = e.clientY;
+	function showCoordinates(e, img) {
+		x = e.clientX - 420;
+		y = e.clientY - 220;
 		coor = "Coordinates: (" + x + "," + y + ")";
 		document.getElementById("desc").innerHTML=coor;
 	}
 	function clearCoor() {
 		document.getElementById("desc").innerHTML="";
 	}
+	function writeText(txt) {
+		document.getElementById("annotation").innerHTML=txt;
+	}
+	// function offsetX(img) { 
+		// var x = img.offsetLeft;
+		// alert("left: " + x + " top: " + y);
+		// return x;
+	// }
+	// function offsetY(img) { 
+		// var y = img.offsetTop;
+		// alert("left: " + x + " top: " + y); 
+		// return y;
+	// }
 </script>
 </head>
 <body>
@@ -70,11 +83,27 @@
 				<p>
 				<a id="myAnchor" href="http://www.google.com"> Launch Demo </a>
 				</p>
-				<!-- <img onmouseover="enlarge(this)" onmouseout="reduce(this)" src="Logo.gif" alt="Civilization V" width="16" height="16"> -->
+				<!-- <img onmouseover="testImage(this)" onmouseout="reduce(this)" src="Logo.gif" alt="Civilization V" width="16" height="16"> -->
 				<div id="gameMap">
-				<img src = "Screenshot I.jpg" onmousemove="showCoordinates(event)" onmouseout="clearCoor()">
-				<!-- <div id="coordiv" style="width:199px;height:99px;border:1px solid" onmousemove="showCoordinates(event)" onmouseout="clearCoor()"></div> -->
-				<p id="desc"> </p>
+					<img id = "map" src = "Screenshot I.jpg" onmousemove="showCoordinates(event, this)" onmouseout="clearCoor()" usemap="#gameplaymap" >
+					<map name = "gameplaymap">
+						<area shape ="circle" coords ="246,141,50"
+						onmouseover="writeText('duke it out')"
+						onmouseout="writeText('')"
+						href ="sun.htm" target ="_blank" alt="Sun" />
+						
+						<area shape ="circle" coords ="375,214,50"
+						onmouseover="writeText('cashin out')"
+						onmouseout="writeText('')"
+						href ="mercur.htm" target ="_blank" alt="Mercury" />
+						
+						<area shape ="circle" coords ="482,216,40"
+						onmouseover="writeText('look at dem cattles')"
+						onmouseout="writeText('')"
+						href ="venus.htm" target ="_blank" alt="Venus" />
+					</map>
+					<p id="desc"> </p>
+					<p id="annotation"></p>	
 				</div>
 			</div>
 		</div>
