@@ -100,6 +100,22 @@ strong { font-size: 20px; font-weight: bold; }
 	-webkit-transition:color .2s ease-out, background .2s ease-in;
 }
 
+#gameMap img {
+	float: none;
+	height: inherit;
+	width: inherit;
+}
+
+#gameMap {
+	position: relative;
+	width: 95%;
+	height: inherit;
+	padding-top: 20px;
+	margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+}
+
 #gameInfoText {
 	position: relative;
 	width: 95%;
@@ -107,7 +123,8 @@ strong { font-size: 20px; font-weight: bold; }
 	padding-top: 20px;
 	margin-left: auto;
     margin-right: auto;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #gameInfoBox {
