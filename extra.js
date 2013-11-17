@@ -83,6 +83,7 @@ function launchDemo() {
     	win.fullscreen();
     }
   );
+	chrome.app.window.current().close();
 }
 
 document.addEventListener('DOMContentLoaded', function () {
