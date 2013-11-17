@@ -11,44 +11,7 @@
 	<link rel="stylesheet" href="jquery-ui.css">
     <link rel="stylesheet" href="style.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Lato|Courgette' rel='stylesheet' type='text/css'>
-<!-- <script>
-	function enlarge(img) {
-		var width = img.clientWidth;
-		var height = img.clientHeight;
-		img.style.width = 2 * width + "px";
-		img.style.height = 2 * height + "px";
-	}
-	function reduce(img) {	
-		var width = img.clientWidth;
-		var height = img.clientHeight;
-		img.style.width = width / 2 + "px";
-		img.style.height = height / 2 + "px";
-	}	
-</script> -->
-<script>
-	function showCoordinates(e, img) {
-		x = e.clientX - 420;
-		y = e.clientY - 220;
-		coor = "Coordinates: (" + x + "," + y + ")";
-		document.getElementById("desc").innerHTML=coor;
-	}
-	function clearCoor() {
-		document.getElementById("desc").innerHTML="";
-	}
-	function writeText(txt) {
-		document.getElementById("annotation").innerHTML=txt;
-	}
-	// function offsetX(img) { 
-		// var x = img.offsetLeft;
-		// alert("left: " + x + " top: " + y);
-		// return x;
-	// }
-	// function offsetY(img) { 
-		// var y = img.offsetTop;
-		// alert("left: " + x + " top: " + y); 
-		// return y;
-	// }
-</script>
+    
 </head>
 <body>
 <div id="headerBackground">
