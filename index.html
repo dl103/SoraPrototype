@@ -22,15 +22,28 @@
 	}	
 </script> -->
 <script>
-	function showCoordinates(e) {
-		x = e.clientX;
-		y = e.clientY;
+	function showCoordinates(e, img) {
+		x = e.clientX - 420;
+		y = e.clientY - 220;
 		coor = "Coordinates: (" + x + "," + y + ")";
 		document.getElementById("desc").innerHTML=coor;
 	}
 	function clearCoor() {
 		document.getElementById("desc").innerHTML="";
 	}
+	function writeText(txt) {
+		document.getElementById("annotation").innerHTML=txt;
+	}
+	// function offsetX(img) { 
+		// var x = img.offsetLeft;
+		// alert("left: " + x + " top: " + y);
+		// return x;
+	// }
+	// function offsetY(img) { 
+		// var y = img.offsetTop;
+		// alert("left: " + x + " top: " + y); 
+		// return y;
+	// }
 </script>
 </head>
 <body>
@@ -74,11 +87,26 @@
 					<strong>Game Info</strong><br>
 					Civilization V is a turn-based strategy game, where each player represents the leader of a certain nation or ethnic group ("civilization") and must guide its growth over the course of thousands of years. It starts with the founding of a small primitive settlement and ends after achieving one of the victory conditions—or surviving until the number of game turns end, at which point the highest-scoring civilization, based on several factors, is declared the winner. During their turn, the player must manage units representing civilian and military forces: directing units to explore the world, found new cities, go into battle to take over other civilizations, control production in their cities to produce new units and buildings, improve land, handle diplomacy with other civilizations in the game, and finally direct the civilization's growth in technology, culture, food supply, and economics. Victory conditions can include taking over the entire world by force, convincing the other civilizations through diplomacy to acknowledge the player as a leader, building the "Utopia Project" wonder by adopting social policies or winning the space race to build a colony spaceship to reach a nearby planet, or winning from being the most powerful civilization on the globe after a set number of turns.<br>
 				</p>
-				<!-- <img onmouseover="enlarge(this)" onmouseout="reduce(this)" src="Logo.gif" alt="Civilization V" width="16" height="16"> -->
+				<p>
+				<a id="myAnchor" href="http://www.google.com"> Launch Demo </a>
+				</p>
 				<div id="gameMap">
-				<img src = "Screenshot I.jpg" onmousemove="showCoordinates(event)" onmouseout="clearCoor()">
-				<!-- <div id="coordiv" style="width:199px;height:99px;border:1px solid" onmousemove="showCoordinates(event)" onmouseout="clearCoor()"></div> -->
-				<p id="desc"> </p>
+					<img id = "map" src = "Screenshot I.jpg" onmousemove="showCoordinates(event, this)" onmouseout="clearCoor()" usemap="#gameplaymap" >
+					<map name = "gameplaymap">
+						<area shape ="circle" coords ="246,141,50"
+						onmouseover="writeText('duke it out')"
+						onmouseout="writeText('')"/>
+						
+						<area shape ="circle" coords ="375,214,50"
+						onmouseover="writeText('cashin out')"
+						onmouseout="writeText('')"/>
+						
+						<area shape ="circle" coords ="482,216,40"
+						onmouseover="writeText('look at dem cattles')"
+						onmouseout="writeText('')"/>
+					</map>
+					<p id="desc"> </p>
+					<p id="annotation"></p>	
 				</div>
 			</div>
 		</div>

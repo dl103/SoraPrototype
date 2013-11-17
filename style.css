@@ -146,16 +146,16 @@ strong { font-weight: bold; }
 	float: none;
 	height: inherit;
 	width: inherit;
+	overflow: hidden;
 }
 
 #gameMap {
 	position: relative;
 	width: 95%;
 	height: inherit;
-	padding-top: 20px;
+	padding-top: 0px;
 	margin-left: auto;
     margin-right: auto;
-    overflow: auto;
 }
 
 #gameInfoText {
