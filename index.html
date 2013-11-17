@@ -86,57 +86,26 @@
 						<p>Go!</p>
 					</div>
 				</div>
-				<p>
 				<div id="accordion">
-					  <h3>Video</h3>
+					  <h3>Trailer</h3>
 					  <div>
-					    <p>
-					     <!-- <object width="640" height="360">
-					  <param name="movie" value="https://www.youtube.com/v/dT_CUPaiRbQ?autoplay=1&version=3"></param>
-					  <param name="allowFullScreen" value="true"></param>
-					  <param name="allowScriptAccess" value="always"></param>
-					  <embed src="https://www.youtube.com/v/dT_CUPaiRbQ?autoplay=1&version=3" type="application/x-shockwave-flash" allowfullscreen="true" 							  allowScriptAccess="always" width="640" height="360"></embed>
-					  </object> -->
-						<iframe id="ytplayer" type="text/html" width="640" height="360"
-						src="https://www.youtube.com/embed/dT_CUPaiRbQ?autoplay=1"
-						frameborder="0" allowfullscreen></iframe>
+					    <webview id="gameVideoSlide" style="width:640px; height:360px;" autosize="true"
+							src="http://google.com"></webview>
 					  </div>
 					  <h3>Game Info</h3>
 					  <div>
-					    <p>
-					    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-					    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-					    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-					    suscipit faucibus urna.
-					    </p>
+					    <p id="gameInfoSlide"></p>
 					  </div>
 					  <h3>Screenshots</h3>
 					  <div>
-					    <p>
-					    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-					    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-					    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-					    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-					    </p>
+					    <p id="gameScreenshotSlide"></p>
+
 					  </div>
 					  <h3>Reviews</h3>
 					  <div>
-					    <p>
-					    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-					    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-					    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-					    mauris vel est.
-					    </p>
-					    <p>
-					    Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-					    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-					    inceptos himenaeos.
-					    </p>
+					    <p id="gameReviewsSlide"><br><br><br><br><br><br><br><br><br><br></p>
 					  </div>
 					</div>
-					<strong>Game Info</strong><br>
-					The Flagship Turn-Based Strategy Game Returns Become Ruler of the World by establishing and leading a civilization from the dawn of man into the space age: Wage war, conduct diplomacy, discover new technologies, go head-to-head with some of history’s greatest leaders and build the most powerful empire the world has ever known.<br>
-				</p>
 				<div id="gameMap">
 					<img id = "map" src = "Screenshot I.jpg" onmousemove="showCoordinates(event, this)" onmouseout="clearCoor()" usemap="#gameplaymap" >
 					<map name = "gameplaymap">
