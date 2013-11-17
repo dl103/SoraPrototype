@@ -234,4 +234,8 @@ strong { font-weight: bold; }
 	float: right;
 }
 
+#accordion {
+	padding-top: 20px;
+}
+
 
