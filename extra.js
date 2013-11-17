@@ -3,6 +3,7 @@ function changeInfo(intId) {
 		document.getElementById("gameInfoHeaderText").innerHTML="Assassin's Creed IV: Black Flag";
 		document.getElementById("gameInfoSlide").innerHTML="The year is 1715. Pirates rule the Caribbean and have established their own lawless Republic where corruption, greediness and cruelty are commonplace. Among these outlaws is a brash young captain named Edward Kenway.";
 		document.getElementById("gameVideoSlide").src="http://www.youtube.com/embed/IDlEwUP7lps?autoplay=1";
+		document.getElementById("gameScreenshotSlide").src = chrome.extension.getURL("civ5.jpg");
 	};
 	if(intId == 2) {
 		document.getElementById("gameInfoHeaderText").innerHTML="Civilization V";
@@ -58,16 +59,14 @@ function clearCoor() {
 function writeText(txt) {
 	document.getElementById("annotation").innerHTML=txt;
 }
-// function offsetX(img) { 
-	// var x = img.offsetLeft;
-	// alert("left: " + x + " top: " + y);
-	// return x;
-// }
-// function offsetY(img) { 
-	// var y = img.offsetTop;
-	// alert("left: " + x + " top: " + y); 
-	// return y;
-// }
+function offsetX(img) { 
+	var x = img.offsetLeft;
+	return x;
+}
+function offsetY(img) { 
+	var y = img.offsetTop; 
+	return y;
+}
 
 function launchDemo() {
 	chrome.app.window.create("client.html",
