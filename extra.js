@@ -3,12 +3,13 @@ function changeInfo(intId) {
 		document.getElementById("gameInfoHeaderText").innerHTML="Assassin's Creed IV: Black Flag";
 		document.getElementById("gameInfoSlide").innerHTML="The year is 1715. Pirates rule the Caribbean and have established their own lawless Republic where corruption, greediness and cruelty are commonplace. Among these outlaws is a brash young captain named Edward Kenway.";
 		document.getElementById("gameVideoSlide").src="http://www.youtube.com/embed/IDlEwUP7lps?autoplay=1";
-		document.getElementById("gameScreenshotSlide").src = chrome.extension.getURL("civ5.jpg");
+		
 	};
 	if(intId == 2) {
 		document.getElementById("gameInfoHeaderText").innerHTML="Civilization V";
 		document.getElementById("gameInfoSlide").innerHTML="The Flagship Turn-Based Strategy Game Returns Become Ruler of the World by establishing and leading a civilization from the dawn of man into the space age: Wage war, conduct diplomacy, discover new technologies, go head-to-head with some of history’s greatest leaders and build the most powerful empire the world has ever known.";
 		document.getElementById("gameVideoSlide").src="http://www.youtube.com/embed/l-y99pkS_Vs?autoplay=1";
+		document.getElementById("map").src = "civ5.jpg";
 	};
 	if(intId == 3) {
 		document.getElementById("gameInfoHeaderText").innerHTML="DotA 2";
@@ -97,6 +98,24 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 	document.getElementById('launchButton').addEventListener('click', function() {
 		launchDemo();
+	});
+	document.getElementById('mapArea1').addEventListener('mouseover', function() {
+		writeText('duke it out');
+	});
+	document.getElementById('mapArea1').addEventListener('mouseout', function() {
+		writeText('');
+	});
+	document.getElementById('mapArea2').addEventListener('mouseover', function() {
+		writeText('cashin out');
+	});
+	document.getElementById('mapArea2').addEventListener('mouseout', function() {
+		writeText('');
+	});
+	document.getElementById('mapArea3').addEventListener('mouseover', function() {
+		writeText('look at dem cattles');
+	});
+	document.getElementById('mapArea3').addEventListener('mouseout', function() {
+		writeText('');
 	});
 	changeInfo(1);
 });
