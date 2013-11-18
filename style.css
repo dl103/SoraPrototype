@@ -244,4 +244,9 @@ strong { font-weight: bold; }
     overflow-x: hidden;
 }
 
+#wv1 {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
 
